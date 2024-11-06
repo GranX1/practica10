@@ -14,4 +14,9 @@ public class Posicion {
     public int getColumna() {
         return columna;
     }
+
+    @Override
+    public String toString() {
+        return "(" + renglon + ", " + columna + ")";
+    }
 }

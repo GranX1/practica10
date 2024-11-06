@@ -6,10 +6,13 @@ public class Bomba extends Elemento implements Destruible {
         this.radio = radio;
     }
 
+    public int getRadio() {
+        return radio;
+    }
+
     public void explotar() {
         System.out.println("Explotando bomba!!");
         escenario.destruirElementos(posicion, radio);
-        // Bomba itself is destroyed
         System.out.println(destruir());
     }
 
